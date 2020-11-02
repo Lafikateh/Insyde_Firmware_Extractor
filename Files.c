@@ -13,8 +13,8 @@
 #define mode_write "wb"
 
 // Status definitions
-#define status_directory S_IFDIR
-#define status_file S_IFREG
+#define status_directory 0040000
+#define status_file 0100000
 
 // Create an buffer
 // Returns data_buffer* on success, or NULL on failure
