@@ -11,11 +11,11 @@ typedef struct
 
 // Create an buffer
 // Returns data_buffer* on success, or NULL on failure
-data_buffer* create_buffer(const unsigned char* data, const unsigned long long size);
+data_buffer* create_buffer(unsigned char* data, unsigned long long size);
 
 // Free an buffer
 // Returns true on success, or false on failure
-bool free_buffer(const data_buffer* buffer);
+bool free_buffer(data_buffer* buffer);
 
 // Check if path exists
 // Returns true on success, or false on failure
