@@ -108,7 +108,7 @@ int main(int argument_count, char* argument_list[])
 				if (header_pointer != NULL)
 				{
 					// Map the header pointer to the source file buffer
-					InsydeFlash_Firmware_Header* header = header_pointer;
+					InsydeFlash_Firmware_Header* header = (InsydeFlash_Firmware_Header*)(header_pointer);
 
 					// Allocate and zero-fill the target data buffer
 					unsigned long target_data_buffer_size = header->used_size;
