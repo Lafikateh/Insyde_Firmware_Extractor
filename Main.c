@@ -69,11 +69,6 @@ unsigned char* find_pattern(const unsigned char* start, const unsigned char* end
 // Program Entry Point
 int main(int argument_count, char* argument_list[])
 {
-	char abcd[9] = "abcdefgh";
-	char efgh[5] = "efgh";
-
-	char* sdasd = strstr(abcd, efgh);
-
 	// Print program header
 	puts("Insyde UEFI Firmware Extractor v1.0.0");
 
@@ -88,8 +83,8 @@ int main(int argument_count, char* argument_list[])
 	else if (argument_count == 2 || argument_count == 3)
 	{
 		// Determine the source and target file path
-		const char* source_path = argument_list[1];
-		const char* target_path = NULL;
+		char* source_path = argument_list[1];
+		char* target_path = NULL;
 		if (argument_count == 3)
 		{
 			target_path = argument_list[2];
