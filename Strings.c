@@ -61,7 +61,7 @@ string* create_string(const char* text)
 
 // Free an string
 // Returns true on success, or false on failure
-bool free_string(const string* string_handle)
+bool free_string(string* string_handle)
 {
 	if (string_handle != NULL)
 	{
