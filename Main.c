@@ -21,7 +21,7 @@ typedef struct
 
 // Find an pattern in an buffer
 // Returns unsigned char* on success, or NULL on failure
-const unsigned char* find_pattern(const unsigned char* start, const unsigned char* end, const unsigned char* pattern, const unsigned long length)
+unsigned char* find_pattern(const unsigned char* start, const unsigned char* end, const unsigned char* pattern, const unsigned long length)
 {
 	// Check if all the pointers and length are valid
 	if (start != NULL && end != NULL && pattern != NULL && length > 0 && end > start)
@@ -48,7 +48,7 @@ const unsigned char* find_pattern(const unsigned char* start, const unsigned cha
 			{
 				if (scan == 0)
 				{
-					return start;
+					return (unsigned char*)(start);
 				}
 			}
 
