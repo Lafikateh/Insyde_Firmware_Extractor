@@ -18,7 +18,7 @@
 
 // Create an buffer
 // Returns data_buffer* on success, or NULL on failure
-data_buffer* create_buffer(const unsigned char* data, const unsigned long long size)
+data_buffer* create_buffer(unsigned char* data, unsigned long long size)
 {
 	// Check if the data pointer and size are valid
 	if (data != NULL && size > 0)
@@ -40,7 +40,7 @@ data_buffer* create_buffer(const unsigned char* data, const unsigned long long s
 
 // Free an buffer
 // Returns true on success, or false on failure
-bool free_buffer(const data_buffer* buffer)
+bool free_buffer(data_buffer* buffer)
 {
 	// Check if the path is valid
 	if (buffer != NULL)
