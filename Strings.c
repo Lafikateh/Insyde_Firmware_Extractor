@@ -174,7 +174,7 @@ char* c_append_string_c(char* existing_string, const char* new_string)
 
 // Replace an source string with the replacement string
 // Returns string* on success, or NULL on failure
-string* replace_string(string* string_handle, const string* source_string, const string* replacement_string)
+string* replace_string(string* string_handle, string* source_string, string* replacement_string)
 {
 	// Check if the string pointers are valid
 	if (string_handle != NULL && source_string != NULL && replacement_string != NULL)
@@ -251,7 +251,7 @@ string* replace_string(string* string_handle, const string* source_string, const
 
 // Replace an source string with the replacement string
 // Returns string* on success, or NULL on failure
-string* replace_string_c(string* string_handle, const char* source_string, const char* replacement_string)
+string* replace_string_c(string* string_handle, char* source_string, char* replacement_string)
 {
 	// Check if the string pointers are valid
 	if (string_handle != NULL && source_string != NULL && replacement_string != NULL)
@@ -328,7 +328,7 @@ string* replace_string_c(string* string_handle, const char* source_string, const
 
 // Replace an source string with the replacement string
 // Returns char* on success, or NULL on failure
-char* c_replace_string_c(char* string_handle, const char* source_string, const char* replacement_string)
+char* c_replace_string_c(char* string_handle, char* source_string, char* replacement_string)
 {
 	// Check if the string pointers are valid
 	if (string_handle != NULL && source_string != NULL && replacement_string != NULL)
