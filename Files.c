@@ -275,7 +275,7 @@ data_buffer* read_file(const char* path)
 	else
 	{
 		// Return NULL
-		return false;
+		return NULL;
 	}
 }
 
