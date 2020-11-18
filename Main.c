@@ -70,7 +70,7 @@ unsigned char* find_pattern(const unsigned char* start, const unsigned char* end
 int main(int argument_count, char* argument_list[])
 {
 	// Print program header
-	printf("Insyde UEFI Firmware Extractor v1.0.0\n");
+	printf("Insyde UEFI Firmware Extractor v1.0.1\n");
 
 	if (argument_count == 1)
 	{
