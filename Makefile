@@ -8,4 +8,4 @@ debug:
 	$(CC) -std=c99 -g3 -o Insyde_Firmware_Extractor Main.c Files.c Strings.c
 
 clean:
-	rm -f $(OBJS) $(OUT)
+	$(RM) $(OBJS) $(OUT)
